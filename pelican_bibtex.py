@@ -183,6 +183,9 @@ def add_publications(generator):
             text = entry_clean.text.render(html_backend)
             for replace in highlights:
               text = text.replace(replace, '<strong>' + replace + '</strong>')
+            
+            # remove latex-specific formatting
+            text = re.sub('\\\\textbf ', '', text)
 
             publications.append((key,
                                 typee,
