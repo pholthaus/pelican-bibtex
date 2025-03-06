@@ -217,7 +217,7 @@ def add_publications(generator):
                                                                           pub[2].
                                                                           replace("in press", "9900").
                                                                           replace("under review", "9901").
-                                                                          replace("in writing", "9902")
+                                                                          replace("writing", "9902")
                                                                       ),
                                                                       pub[1]))
         else:
@@ -227,7 +227,7 @@ def add_publications(generator):
                                                                           pub[2].
                                                                           replace("in press", "9900").
                                                                           replace("under review", "9901").
-                                                                          replace("in writing", "9902")
+                                                                          replace("writing", "9902")
                                                                         ))
 
 def register():
